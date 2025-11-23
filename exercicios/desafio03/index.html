@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Desafio 03t</title>
+    <style>
+        body {
+    background-color: #333333; /* Fundo cinza escuro */
+    color: #FFFFFF;           /* Letras brancas (contraste) */
+}
+        h1 {
+            text-align: center; /* Centraliza o título principal */
+        }
+
+        /* O CONTÊINER QUE FAZ A CENTRALIZAÇÃO (Flexbox) */
+        .galeria {
+            display: flex;          /* Habilita o Flexbox */
+            flex-wrap: wrap;        /* Permite a quebra de linha (2x2) */
+            justify-content: center;  /* Centraliza os vídeos dentro da div */
+            max-width: 1160px;      /* Largura ideal para caber 2 vídeos + margens */
+            margin: 20px auto;      /* Centraliza a div no meio da tela */
+        }
+        
+        /* O ESTILO DOS VÍDEOS (Tamanho Uniforme e espaçamento) */
+        .galeria iframe {
+            width: 560px;
+            height: 315px; 
+            margin: 10px;           /* Espaçamento entre os vídeos */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+        }
+    </style>
+</head>
+<body>
+    <H1>Quatro musicas da minha playlist</H1>
+     <div class="galeria">
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/t989OOjj5Ho?list=RDGMEMFDHdtbQF5jLxlUZMleBN_wVMt989OOjj5Ho" title="TZ da Coronel  - Anota a Placa ft. Vinta (Clipe Oficial)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2PRAiVs3MVc?list=RDGMEMFDHdtbQF5jLxlUZMleBN_wVMt989OOjj5Ho" title="A Cara do Crime &quot;NÓS INCOMODA&quot;- MC Poze do Rodo | Bielzin | PL Quest | MC Cabelinho (prod. Neobeats)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MHjGwiwyMTo?list=RDGMEMFDHdtbQF5jLxlUZMleBN_wVMt989OOjj5Ho" title="The Major RD &quot;On The Radar&quot; Freestyle (OTR Brazil 🇧🇷)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UK-j58qtJLo?list=RDGMEMFDHdtbQF5jLxlUZMleBN_wVMt989OOjj5Ho" title="TZ da Coronel - Lente Transparente ft. Victor WAO (Áudio Oficial) #Faixa08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Agora da uma olhada no meu canal</h2>
+    <a target="_blank" rel="external" href="https://www.youtube.com/@nyavehstandup"><img src="imagem/you.png" width="50px" alt="logo do youtube"></a>
+     </div>
+</body>
+</html>

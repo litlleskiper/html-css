@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+:root {
+    --cor01: #33044C;
+    --cor02: #0B002A;
+    --cor03: #4F1A46;
+    --cortexto: #FFFFFF;   
+    --cortitulo: #2e7d32;
+
+    --fonte-padrao: Arial, sans-serif, Verdana, Helvetica;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android:  'Android' , sans-serif;
+}
+body {
+    font-family: var(--fonte-padrao);
+    margin: 10px;
+    padding: 0;
+    background-color:  #4F1A46;
+    color: #FFFFFF;
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor02) );
+    border-radius: 8px;
+    min-height: 150px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 40px;
+}
+header h1 {
+    font-family: var(--fonte-destaque);
+    color: var(--cortitulo);
+    text-align: center;
+    margin-bottom: -4px;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px #0000007a;
+}
+header p {
+    font-family: var(--fonte-padrao);
+    max-width: 600px;
+    margin: auto;
+    color: var(--cortexto);
+    font-size: 1.2em;
+    padding: 0 0 13px 0;
+}
+nav {
+    text-align: left;
+    background-color: var(--cor01);
+    border-radius: 8px;
+    margin-bottom: 1px;
+    padding: 8px;
+    box-shadow: 0 7 7px rgba(0, 0, 0, 0.5);
+}
+nav a {
+    color: var(--cortitulo);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+nav a:hover {
+    background-color: var(--cortexto);
+    color: var(--cortitulo);
+}
+main {
+    background-color: var(--cor01);
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+div.video {
+    margin: 0 -20px 30px -20px;
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 56.25%; /* Para manter a proporção 16:9 */
+    position: relative;
+    height: 0; /* Adicionar height: 0 é crucial para o truque do padding */
+}
+
+div.video iframe { /* 👈 Corrigido para selecionar o iframe filho */
+    position: absolute;
+    top: 0;   /* Mude para 0 se o padding-bottom já define o espaço */
+    left: 0;  /* Mude para 0 se o padding-bottom já define o espaço */
+    width: 100%;
+    height: 100%;
+}
+img {
+    display: block;
+    margin: auto;
+    max-width: 350%;
+    height: auto;
+    border-radius: 8px;
+}
+main h1 {
+    font-family: var(--fonte-android);
+    color: var(--cortitulo);
+    text-align: center;
+    margin-bottom: 10px;
+}
+main h2 {
+    font-family: var(--fonte-android);
+    color: var(--cortitulo);
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, var(--cor02), transparent); /* ✅ CORRETO */
+    text-align: left;
+    text-indent: 8px;
+    border-radius: 8px;
+}
+main p {
+    font-size: 1em;
+    line-height: 1.6em;
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.1em;
+}
+main strong {
+    font-weight: bold;
+
+}
+main a {
+    color: var(--cortexto);
+    text-decoration: underline;
+    border-radius: 5px;
+    font-weight: italic;
+    transition-duration: .5s;
+    padding: 2px 6px;
+}
+
+main a:hover {
+     background-color: var(--cortexto);
+    color: var(--cortitulo);
+}
+aside {
+    background-color: var(--cor03);
+    color: var(--cortexto);
+    border-radius: 8px;
+    margin-top: 3px;
+    padding: 10px;
+}
+aside ul {
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
+    margin-left: 20px;
+}
+aside h3 {
+    background-color: var(--cor02);
+    font-family: var(--fonte-destaque);
+    color: var(--cortitulo);
+    text-align: left;
+    margin: -10px -10px 0px -10px;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+footer {
+    color: var(--cortexto);
+    background-color: var(--cor02);
+    border-radius: 8px;
+    margin-top: 3px;
+    padding: 2px;
+    text-align: center;
+}
