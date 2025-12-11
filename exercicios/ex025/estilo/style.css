@@ -58,18 +58,35 @@ section {
 section.normal {
     background-color: white;
     color: black;
-    padding: 20px;
-    line-height: 1.6;
+}
+
+section.imagem>p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(44, 29, 29, 0.664);
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
 section.imagem {
-    display: inline-block;
-    background-color: rgb(44, 29, 29), 250);
-    color: white;
+    padding: 5px;
+    background-color: rgba(44, 29, 29, 0.5);
+    box-shadow: inset 0 0 10px black;
+    background-size: cover;
+    background-attachment: fixed;
+    
 }
-section.imagem p {
-    background-color: black;
-    width: 400px;
+section.imagem#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    width: 100%;
+}
+
+section.imagem#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    width: 100%;
+    background-size: cover;
 }
 
 footer {
